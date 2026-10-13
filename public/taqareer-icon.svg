@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Cyan to Deep Navy Gradient -->
+    <linearGradient id="netNavyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="60%" stop-color="#075985" />
+      <stop offset="100%" stop-color="#0c2340" />
+    </linearGradient>
+
+    <!-- Cyan to Green Gradient for Waves & Document -->
+    <linearGradient id="waveGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="35%" stop-color="#0284c7" />
+      <stop offset="70%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#84cc16" />
+    </linearGradient>
+
+    <!-- Document Cyan/Teal Gradient -->
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+
+    <!-- Arrow Green Gradient -->
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="45%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#84cc16" />
+    </linearGradient>
+
+    <!-- Bar Chart Green Gradient -->
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#84cc16" />
+    </linearGradient>
+
+    <!-- Dot / Antenna Gradient -->
+    <radialGradient id="antennaDot" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="85%" stop-color="#0c2340" />
+      <stop offset="100%" stop-color="#08182b" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background is transparent/clean to allow versatile icon usage -->
+
+  <g transform="translate(16, 16)">
+    <!-- 1. TOP-LEFT: NETWORK MESH / NODES TOPOLOGY -->
+    <g id="network-mesh">
+      <!-- Mesh Connecting Lines -->
+      <path d="M 205 60 L 98 126" stroke="#0f2b48" stroke-width="15" stroke-linecap="round" />
+      <path d="M 205 60 L 136 215" stroke="#0f2b48" stroke-width="15" stroke-linecap="round" />
+      <path d="M 205 60 L 210 156" stroke="#0284c7" stroke-width="15" stroke-linecap="round" />
+      
+      <path d="M 98 126 L 50 252" stroke="#0f2b48" stroke-width="15" stroke-linecap="round" />
+      <path d="M 98 126 L 136 215" stroke="#0f2b48" stroke-width="15" stroke-linecap="round" />
+
+      <path d="M 136 215 L 50 252" stroke="#0f2b48" stroke-width="15" stroke-linecap="round" />
+      <path d="M 136 215 L 210 156" stroke="#075985" stroke-width="15" stroke-linecap="round" />
+      
+      <path d="M 50 252 L 136 288" stroke="#0f2b48" stroke-width="15" stroke-linecap="round" />
+      <path d="M 210 156 L 205 240" stroke="#0284c7" stroke-width="15" stroke-linecap="round" />
+
+      <!-- Network Nodes (Circles) -->
+      <!-- Top Primary Node (Cyan) -->
+      <circle cx="205" cy="60" r="23" fill="#0284c7" stroke="#ffffff" stroke-width="3" />
+      <!-- Left Upper Node (Navy) -->
+      <circle cx="98" cy="126" r="22" fill="#0f2b48" stroke="#ffffff" stroke-width="3" />
+      <!-- Center Node (Navy) -->
+      <circle cx="136" cy="215" r="20" fill="#0f2b48" stroke="#ffffff" stroke-width="3" />
+      <!-- Far Left Bottom Node (Deep Navy) -->
+      <circle cx="50" cy="252" r="24" fill="#0c2340" stroke="#ffffff" stroke-width="3" />
+      <!-- Right Connection Node (Cyan) -->
+      <circle cx="210" cy="156" r="21" fill="#0284c7" stroke="#ffffff" stroke-width="3" />
+    </g>
+
+    <!-- 2. TOP-RIGHT: REPORT DOCUMENT & STATS CHART -->
+    <g id="document-report">
+      <!-- Main Document Outline & Body -->
+      <path d="M 235 55 
+               L 310 55 
+               L 366 112 
+               L 366 282 
+               C 366 290, 360 296, 350 296 
+               L 262 296 
+               C 246 296, 235 285, 235 270 
+               Z" 
+            fill="#ffffff" 
+            stroke="url(#docGrad)" 
+            stroke-width="15" 
+            stroke-linejoin="round" />
+
+      <!-- Folded Dog-Ear Corner -->
+      <path d="M 310 55 L 310 112 L 366 112 Z" 
+            fill="#0284c7" 
+            stroke="url(#docGrad)" 
+            stroke-width="5" 
+            stroke-linejoin="round" />
+
+      <!-- Report Horizontal Lines -->
+      <line x1="252" y1="100" x2="295" y2="100" stroke="#0284c7" stroke-width="10" stroke-linecap="round" />
+      <line x1="252" y1="124" x2="330" y2="124" stroke="#0ea5e9" stroke-width="9" stroke-linecap="round" />
+      <line x1="252" y1="146" x2="315" y2="146" stroke="#0ea5e9" stroke-width="9" stroke-linecap="round" />
+      <line x1="252" y1="168" x2="290" y2="168" stroke="#38bdf8" stroke-width="9" stroke-linecap="round" />
+
+      <!-- Growing Bar Chart Columns (Inside Document) -->
+      <!-- Bar 1 (Short - Cyan) -->
+      <rect x="256" y="208" width="22" height="42" rx="4" fill="#0284c7" />
+      <!-- Bar 2 (Medium - Teal) -->
+      <rect x="286" y="180" width="22" height="70" rx="4" fill="#10b981" />
+      <!-- Bar 3 (Tall - Bright Green) -->
+      <rect x="316" y="150" width="22" height="100" rx="4" fill="url(#barGrad)" />
+    </g>
+
+    <!-- 3. BOTTOM: WIFI BROADCAST ARCS -->
+    <g id="wifi-waves">
+      <!-- Outer Concentric Arc (Gradient: Deep Navy -> Cyan -> Green) -->
+      <path d="M 94 330 
+               C 130 240, 310 230, 360 324" 
+            fill="none" 
+            stroke="url(#waveGrad)" 
+            stroke-width="26" 
+            stroke-linecap="round" />
+
+      <!-- Middle Concentric Arc (Navy to Cyan) -->
+      <path d="M 125 365 
+               C 155 300, 275 292, 324 362" 
+            fill="none" 
+            stroke="url(#netNavyGrad)" 
+            stroke-width="24" 
+            stroke-linecap="round" />
+
+      <!-- Inner Concentric Arc (Deep Navy) -->
+      <path d="M 158 400 
+               C 180 355, 248 350, 280 400" 
+            fill="none" 
+            stroke="#0c2340" 
+            stroke-width="22" 
+            stroke-linecap="round" />
+
+      <!-- Base Antenna Circle Dot (Bottom Center) -->
+      <circle cx="228" cy="438" r="32" fill="url(#antennaDot)" />
+    </g>
+
+    <!-- 4. DIAGONAL UPWARD GROWTH ARROW (Bright Green) -->
+    <g id="growth-arrow">
+      <!-- Arrow Shaft -->
+      <path d="M 285 362 L 400 210" 
+            fill="none" 
+            stroke="url(#arrowGrad)" 
+            stroke-width="26" 
+            stroke-linecap="round" />
+
+      <!-- Arrow Head -->
+      <path d="M 370 216 L 436 156 L 424 238 Z" 
+            fill="url(#arrowGrad)" 
+            stroke="url(#arrowGrad)" 
+            stroke-width="4" 
+            stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>
